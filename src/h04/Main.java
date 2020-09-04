@@ -16,17 +16,37 @@ public class Main extends Applet {
 
         //Opdracht 4.1, Teken een gelijkbenige driehoek
 
-        int x[]={15,0,30};
-        int y[]={0,30,30};
-        g.drawPolygon(x,y,3);
+        int x1[]={15,0,30};
+        int y1[]={0,30,30};
+        g.drawPolygon(x1,y1,3);
         g.setColor(Color.red);
-        g.drawString("4.1",5,30);
+        g.drawString("4.1",5,45);
 
         //Opdracht 4.2, Teken een huis met daarin tenminste één raam en een deur
 
+        g.setColor(Color.black);
+        int x2[] = {95,65,35,95,95,35,35};
+        int y2[] = {30,0,30,30,60,60,30};
+        g.drawPolygon(x2,y2,7);
 
+        g.drawRect(75,40,10,20);
+        g.drawOval(77,50,2,2);
+
+        g.drawRect(40,40,10,10);
+        g.drawLine(45,40,45,50);
+        g.drawLine(40,45,50,45);
+
+        g.drawRect(55,40,10,10);
+        g.drawLine(60,40,60,50);
+        g.drawLine(55,45,65,45);
+
+        g.setColor(Color.red);
+        g.drawString("4.2",55,29);
 
         //Opdracht 4.3, Teken de Nederlandse vlag aan een vlaggenstok
+
+
+
 
         //Opdracht 4.4 Drie kinderen hebben het volgende gewicht:
         //
