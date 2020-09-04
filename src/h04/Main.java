@@ -2,11 +2,13 @@ package h04;
 
 import java.applet.Applet;
 import java.awt.*;
+import java.lang.reflect.Array;
 
 public class Main extends Applet {
     @Override
     public void init() {
         setBackground(Color.white);
+        setSize(500, 500);
 
 
     }
@@ -45,7 +47,22 @@ public class Main extends Applet {
 
         //Opdracht 4.3, Teken de Nederlandse vlag aan een vlaggenstok
 
+        g.setColor(Color.yellow);
+        g.fillOval(105,0,10,10);
+        g.setColor(Color.BLACK);
+        g.drawOval(105,0,10,10);
+        g.drawRect(108,10,3,50);
 
+        g.setColor(Color.red);
+        g.fillRect(111,12,50,10);
+        g.setColor(Color.BLACK);
+        g.drawRect(111,12,50,10);
+        g.setColor(Color.BLACK);
+        g.drawRect(111,22,50,10);
+        g.setColor(Color.blue);
+        g.fillRect(111,32,50,10);
+        g.setColor(Color.BLACK);
+        g.drawRect(111,32,50,10);
 
 
         //Opdracht 4.4 Drie kinderen hebben het volgende gewicht:
@@ -56,6 +73,34 @@ public class Main extends Applet {
         //Maak van deze gegevens een staafdiagram, waarbij elke kolom een eigen kleur heeft.
         // De namen van de kinderen staan onder het staafdiagram en de verdeling van de schaal
         // staat naast de diagram met daarbij om de 20 de verdeling.
+
+        int j = 20;
+        String[] namen = {"Valerie","Jeroen","Hans"};
+        for (int i = 0;i < 7; i++){
+            String str1 = Integer.toString(j*i);
+            g.drawString(str1,10,240-(j*i));
+            g.drawLine(35,240-(j*i),200,240-(j*i));
+        }
+        for (int m = 0; m <= namen.length; m++){
+            String naam = namen[m];
+            switch (naam){
+                case "Valerie":
+                    g.setColor(Color.red);
+                    g.fillRect(40,200,30,40);
+
+                    break;
+                case "Jeroen":
+                    g.setColor(Color.blue);
+                    g.fillRect(71,140,30,100);
+
+                    break;
+                case "Hans":
+                    g.setColor(Color.orange);
+                    g.fillRect(102,160,30,80);
+
+                    break;
+            }
+        }
 
         //Opdracht 4.5 Teken met fillArc() op een blauwe achtergrond een ellips die met geel is gevuld.
 
