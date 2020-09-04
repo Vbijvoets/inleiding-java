@@ -1,21 +1,7 @@
-package h03;
-
-import java.applet.Applet;
-import java.awt.*;
-
-public class Main extends Applet {
-    @Override
-    public void init() {
-        setBackground(Color.blue);
-
-
-    }
-    @Override
-    public void paint(Graphics g) {
-        super.paint(g);
-        g.setColor(Color.yellow);
-        g.drawString("Victor",50,60);
-        g.setColor(Color.red);
-        g.drawString("Bijvoets",50,80);
-    }
-}
+//Theorie
+//        Een applicatie is een programma dat buiten de webbrowser of buiten een appletviewer kan worden uitgevoerd. Dit geldt voor alle applicaties in welke programmeertaal dan ook geschreven. Een applicatie geschreven in Java, heeft wel JVM (Java Virtual Machine) nodig om uitgevoerd te kunnen worden. Een applet kan alleen in een webbrowser of appletviewer uitgevoerd worden. Een applet is namelijk altijd een onderdeel van webpagina.
+//
+//        Elke processor (bijvoorbeeld die van Intel, Motorola of SPARC) heeft zijn eigen machinetaal. Daarnaast heeft elke computer ook een besturingssysteem die ook eigen eisen stelt aan programma's. Die combinatie van een processor en een besturingssysteem noemen we een platform. In andere programmeertalen moet de programmeur voor elk platform een applicatie maken. In Java wordt de broncode vertaald naar een tussentaal die standaard is. Deze tussentaal wordt Bytecode genoemd. Vervolgens vertaalt de JVM tijdens de uitvoering de applicatie of de applet de bytecode in machinetaal voor het betreffende platform. In Java hoeft een programmeur dus maar één keer een applicatie of een applet te maken. Wel moet het besturingssysteem over een JVM beschikken. De verschillen tussen bytecode enerzijds en de verschillende machinetalen anderzijds zijn zo klein, dat een gebruiker daarvan nauwelijks of niets merkt.
+//
+//
+//        Er is nog een verschil tussen een applet en een applicatie: Een applicatie kan gegevens uit bestanden lezen, gegevens naar bestanden schrijven en bestanden maken of verwijderen. Uit veiligheidsoverwegingen kan een applet dat niet. Een applet draait op de client en dus op zeer veel verschillende computers en zou veel schade kunnen aanrichten, als het met bestanden kan omgaan.
