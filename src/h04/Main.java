@@ -2,7 +2,6 @@ package h04;
 
 import java.applet.Applet;
 import java.awt.*;
-import java.lang.reflect.Array;
 
 public class Main extends Applet {
     @Override
@@ -15,7 +14,6 @@ public class Main extends Applet {
     @Override
     public void paint(Graphics g) {
         super.paint(g);
-
         //Opdracht 4.1, Teken een gelijkbenige driehoek
 
         int x1[]={15,0,30};
