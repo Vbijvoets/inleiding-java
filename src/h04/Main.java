@@ -81,22 +81,25 @@ public class Main extends Applet {
             g.drawString(str1,10,240-(j*i));
             g.drawLine(35,240-(j*i),200,240-(j*i));
         }
-        for (int m = 0; m <= namen.length; m++){
+        for (int m = 0; m < namen.length; m++){
             String naam = namen[m];
             switch (naam){
                 case "Valerie":
                     g.setColor(Color.red);
                     g.fillRect(40,200,30,40);
+                    g.drawString("Valerie",40,250);
 
                     break;
                 case "Jeroen":
                     g.setColor(Color.blue);
                     g.fillRect(71,140,30,100);
+                    g.drawString("Jeroen",71,260);
 
                     break;
                 case "Hans":
                     g.setColor(Color.orange);
                     g.fillRect(102,160,30,80);
+                    g.drawString("Hans",102,270);
 
                     break;
             }
@@ -104,9 +107,34 @@ public class Main extends Applet {
 
         //Opdracht 4.5 Teken met fillArc() op een blauwe achtergrond een ellips die met geel is gevuld.
 
+        g.setColor(Color.blue);
+        g.fillRect(210,0,100,100);
+        g.setColor(Color.yellow);
+        g.fillArc(210,0,100,100,0,360);
+
         //Opdracht 4.6 Teken een stoplicht
 
+        g.setColor(Color.black);
+        g.drawRect(320,0,15,57);
+        g.setColor(Color.red);
+        g.fillArc(321,1,13,18,0,360);
+        g.setColor(Color.orange);
+        g.fillArc(321,19,13,18,0,360);
+        g.setColor(Color.green);
+        g.fillArc(321,38,13,18,0,360);
+
+
         //Opdracht 4.7 Teken de zijde waarop de vier van een dobbelsteen staat
+
+        g.setColor(Color.black);
+        g.drawRect(320,320,80,80);
+        for (int i = 0; i < 4; i++){
+            if(i % 2 == 0){
+                g.fillArc((330+(i*20)),330,20,20,0,360);
+            }else{
+                g.fillArc((330+((i-1)*20)),370,20,20,0,360);
+            }
+        }
 
 
 
