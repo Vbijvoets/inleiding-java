@@ -19,8 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6332c970-23af-49ab-8117-647f9acb30e9" name="Default Changelist" comment="Opdracht 4.4">
-      <change afterPath="$PROJECT_DIR$/src/H06/Main.java" afterDir="false" />
+    <list default="true" id="6332c970-23af-49ab-8117-647f9acb30e9" name="Default Changelist" comment="h06 klaar">
+      <change afterPath="$PROJECT_DIR$/src/h07/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/h08/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +67,8 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Applet" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="h06.Main" />
+      <option name="HEIGHT" value="500" />
+      <option name="MAIN_CLASS_NAME" value="h07.Main" />
       <module name="inleiding-java" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -88,7 +90,7 @@
       <workItem from="1599206508343" duration="495000" />
       <workItem from="1599207094821" duration="9195000" />
       <workItem from="1599551709436" duration="1752000" />
-      <workItem from="1599556361244" duration="4970000" />
+      <workItem from="1599556361244" duration="5565000" />
     </task>
     <task id="LOCAL-00001" summary="h02 klaar">
       <created>1599205804108</created>
@@ -132,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599570177590</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="h06 klaar">
+      <created>1599644267127</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1599644267128</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,7 +152,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -155,13 +170,14 @@
     <MESSAGE value="Opdracht 4.1" />
     <MESSAGE value="Opdracht 4.2" />
     <MESSAGE value="Opdracht 4.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Opdracht 4.4" />
+    <MESSAGE value="h06 klaar" />
+    <option name="LAST_COMMIT_MESSAGE" value="h06 klaar" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="184" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599644240428">
+    <state x="184" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599644733498">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state x="184" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.826@0.23.1440.826" timestamp="1599644240428" />
+    <state x="184" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.826@0.23.1440.826" timestamp="1599644733498" />
     <state x="533" y="149" key="#com.intellij.ide.util.MemberChooser" timestamp="1599551953099">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
@@ -174,22 +190,22 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="144" y="95" key="DiffContextDialog/0.23.1440.826@0.23.1440.826" timestamp="1599206876585" />
-    <state width="1362" height="202" key="GridCell.Tab.0.bottom" timestamp="1599644193185">
+    <state width="1362" height="202" key="GridCell.Tab.0.bottom" timestamp="1599644762297">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state width="1362" height="202" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1599644193185" />
-    <state width="1362" height="202" key="GridCell.Tab.0.center" timestamp="1599644193183">
+    <state width="1362" height="202" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1599644762297" />
+    <state width="1362" height="202" key="GridCell.Tab.0.center" timestamp="1599644762295">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state width="1362" height="202" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1599644193183" />
-    <state width="1362" height="202" key="GridCell.Tab.0.left" timestamp="1599644193182">
+    <state width="1362" height="202" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1599644762295" />
+    <state width="1362" height="202" key="GridCell.Tab.0.left" timestamp="1599644762294">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state width="1362" height="202" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1599644193182" />
-    <state width="1362" height="202" key="GridCell.Tab.0.right" timestamp="1599644193184">
+    <state width="1362" height="202" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1599644762294" />
+    <state width="1362" height="202" key="GridCell.Tab.0.right" timestamp="1599644762296">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state width="1362" height="202" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1599644193184" />
+    <state width="1362" height="202" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1599644762296" />
     <state x="521" y="163" key="RollbackChangesDialog" timestamp="1599206881921">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
@@ -198,10 +214,14 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="220" y="23" width="1024" height="826" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1599570251627" />
-    <state x="511" y="357" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599644195598">
+    <state x="320" y="176" key="Vcs.Push.Dialog.v2" timestamp="1599645537102">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state x="511" y="357" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.826@0.23.1440.826" timestamp="1599644195598" />
+    <state x="320" y="176" key="Vcs.Push.Dialog.v2/0.23.1440.826@0.23.1440.826" timestamp="1599645537102" />
+    <state x="511" y="357" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599645517759">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="511" y="357" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.826@0.23.1440.826" timestamp="1599645517759" />
     <state x="385" y="173" width="670" height="676" key="search.everywhere.popup" timestamp="1599642988491">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
