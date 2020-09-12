@@ -24,7 +24,8 @@ public class Main extends Applet{
 
     // Opdracht 8.3
     TextField btwCalc = new TextField("BTW Berekenen");
-    int btw;
+    Button btnBtw = new Button("Ok");
+    double btw;
 
     public void init(){
         this.setSize(1480,720);
@@ -50,6 +51,12 @@ public class Main extends Applet{
         add(btnStudentVrouw);
 
         // Opdracht 8.3
+        btwCalc.addActionListener(new TextFieldListener());
+        btnBtw.addActionListener(new ButtonListener());
+
+        add(btwCalc);
+        add(btnBtw);
+
 
     }
 
@@ -110,6 +117,13 @@ public class Main extends Applet{
                 repaint();
             }
 
+            // Opdracht 8.3
+            if(e.getSource() == btnBtw){
+                btw = Double.parseDouble(btwCalc.getText());
+                btw *= 1.21;
+                btwCalc.setText(String.valueOf(round(btw,2)));
+                repaint();
+            }
 
         }
     }
@@ -117,14 +131,32 @@ public class Main extends Applet{
         public void actionPerformed (ActionEvent e){
 
             // Opdracht 8.1
-            if(e.getSource() == textField){
+            if(e.getSource() == textField) {
                 textfield = textField.getText();
                 textField.setText("");
                 textField.requestFocus();
                 repaint();
+            }
+
+            // Opdracht 8.3
+                if(e.getSource() == btwCalc){
+                    btw = Double.parseDouble(btwCalc.getText());
+                    btw *= 1.21;
+                    btwCalc.setText(String.valueOf(round(btw,2)));
+                    repaint();
+
 
             }
         }
     }
 
+    // Deze heb ik gewoon van internet maar dat bespaart gewoon tijd, #waaromzouikhetzelfdoenalshetalgedaanis
+    public static double round(double value, int places) {
+        if (places < 0) throw new IllegalArgumentException();
+
+        long factor = (long) Math.pow(10, places);
+        value = value * factor;
+        long tmp = Math.round(value);
+        return (double) tmp / factor;
+    }
 }
