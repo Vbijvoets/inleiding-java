@@ -4,72 +4,86 @@ import java.applet.Applet;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.*;
+import java.time.YearMonth;
 
 
 public class Main extends Applet {
 
-    TextField input = new TextField();
+    TextField maandInput = new TextField();
+    TextField jaarInput = new TextField();
+
     String defaultText = "De maand van dit maandnummer is : ";
     String otherDefaultText = "En heeft : ";
     String output = "";
-    int dateNumberInt;
-    String dateNumberString;
-    String[] Dates = new String[]{"","Januari",
-                                  "Februari",
-                                  "Maart",
-                                  "April",
-                                  "Mei",
-                                  "Juni",
-                                  "Juli",
-                                  "Augustus",
-                                  "September",
-                                  "Oktober",
-                                  "November",
-                                  "December"};
+    int dateMonthInt;
+    int dateYearInt;
+    String dateMonthString;
+    String dateYearString;
+    YearMonth date = YearMonth.of(1970,1);
 
 
     public void init(){
 
         this.setSize(new Dimension(1200,800));
-        input.addActionListener(new TextFieldListener());
-        input.setPreferredSize(new Dimension(60,40));
-        add(input);
+        maandInput.addActionListener(new TextFieldListener());
+        maandInput.setPreferredSize(new Dimension(60,40));
+        add(maandInput);
+        jaarInput.addActionListener(new TextFieldListener());
+        jaarInput.setPreferredSize(new Dimension(60,40));
+        add(jaarInput);
 
     }
 
     public void paint(Graphics g){
 
         g.drawString( defaultText + output,70,70);
-        g.drawString(defaultText,70,90);
+        g.drawString(otherDefaultText,70,90);
 
     }
 
     class TextFieldListener implements ActionListener {
         public void actionPerformed (ActionEvent e){
 
-            dateNumberString = input.getText().replaceAll("[^\\d]", "");
-            dateNumberInt = Integer.parseInt(dateNumberString);
+            if(e.getSource() == maandInput){
 
-            if(e.getSource() == input){
+                dateMonthString = maandInput.getText().replaceAll("[^\\d]", "");
+                dateMonthInt = Integer.parseInt(dateMonthString);
 
-                if(dateNumberInt <= 12 && dateNumberInt >= 1){
-                    defaultText = "De maand van dit maandnummer is : ";
-                     output = Dates[dateNumberInt];
-                     repaint();
-                     if(dateNumberInt == 2) {
-                         defaultText = "En heeft 28 dagen";
-                         repaint();
-                     }
-//                     else if (){
-//
-//                     }
-                }else{
-                    defaultText = "Dat is geen geldig maandnummer, probeer een getal tussen de 1 en 12";
-                    output = "";
+                if(dateMonthInt <= 0 || dateMonthInt >= 13){
+
+                    defaultText = "Dit is geen geldige maand";
+                    otherDefaultText = "";
+                    repaint();
+
+                }
+                if(dateMonthInt >= 1 && dateMonthInt <= 12){
+
+                    date = YearMonth.of(2020,dateMonthInt);
+                    defaultText = "De maand van dit maandnummer is : " + date.getMonth();
+                    otherDefaultText = "En heeft : " + date.lengthOfMonth() + " Dagen";
+                    repaint();
+
+                }
+                jaarInput.requestFocus();
+            }
+            if(e.getSource() == jaarInput){
+
+                dateYearString = jaarInput.getText().replaceAll("[^\\d]", "");
+                dateYearInt = Integer.parseInt(dateYearString);
+                dateMonthString = maandInput.getText().replaceAll("[^\\d]", "");
+                dateMonthInt = Integer.parseInt(dateMonthString);
+
+                if(dateYearInt < 1970){
+                    defaultText = "Dit is geen geldig jaar";
+                    otherDefaultText = "Probeer een jaar na/of 1970";
                     repaint();
                 }
-
+                if (dateYearInt >= 1970){
+                    date = YearMonth.of(dateYearInt,dateMonthInt);
+                    defaultText = "De maand van dit maandnummer is : " + date.getMonth();
+                    otherDefaultText = "En heeft : " + date.lengthOfMonth() + " Dagen";
+                    repaint();
+                }
 
             }
 
