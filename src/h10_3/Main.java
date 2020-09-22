@@ -84,12 +84,8 @@ public class Main extends Applet {
                     otherDefaultText = "En heeft : " + date.lengthOfMonth() + " Dagen";
                     repaint();
                 }
-
             }
-
         }
     }
-
-
 }
 
