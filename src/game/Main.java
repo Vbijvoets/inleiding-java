@@ -4,12 +4,9 @@ import java.awt.*;
 import java.applet.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.concurrent.TimeUnit;
 
 public class Main extends Applet {
 
-    int endOfGame = 0;
-    int playerWin;
     int currentPlayer = 1;
 
     Button sub1 = new Button("-1");
@@ -41,6 +38,17 @@ public class Main extends Applet {
             g.fillRect(15 + (i * 10),10,5,30);
         }
 
+        g.drawString(Integer.toString(stones),50,90);
+
+        if (stones <= 1){
+            if(currentPlayer == 1){
+                g.drawString("Helaas je hebt verloren",30,70);
+            }
+            if (currentPlayer == 2){
+                g.drawString("Woohoo! je hebt gewonnen",30,70);
+            }
+        }
+
     }
 
     class ButtonListener implements ActionListener{
@@ -48,8 +56,8 @@ public class Main extends Applet {
                 if (e.getSource() == sub1){
                     if (currentPlayer == 1){
                         stones -= 1;
-                        currentPlayer = 2;
                         repaint();
+                        currentPlayer = 2;
                         ComputerTurn();
                     }
 
@@ -57,8 +65,8 @@ public class Main extends Applet {
                 if (e.getSource() == sub2){
                     if (currentPlayer == 1){
                         stones -= 2;
-                        currentPlayer = 2;
                         repaint();
+                        currentPlayer = 2;
                         ComputerTurn();
                     }
 
@@ -66,50 +74,57 @@ public class Main extends Applet {
                 if (e.getSource() == sub3){
                     if (currentPlayer == 1){
                         stones -= 3;
-                        currentPlayer = 2;
                         repaint();
+                        currentPlayer = 2;
                         ComputerTurn();
                     }
                 }
             }
         }
 
+
+        // The computers turn.
         public void ComputerTurn () {
 
-            wait(1000);
-
-            if (stones % 4 + 1 == 3){
-                stones -= 1;
-                currentPlayer = 1;
-                repaint();
+            if (stones >= 1) {
+                switch (stones) {
+                    case 1:
+                    case 2:
+                    case 9:
+                    case 15:
+                    case 17:
+                    case 18:
+                    case 21:
+                        stones -= 1;
+                        repaint();
+                        break;
+                    case 3:
+                    case 6:
+                    case 8:
+                    case 10:
+                    case 12:
+                    case 14:
+                    case 16:
+                    case 19:
+                    case 22:
+                        stones -= 2;
+                        repaint();
+                        break;
+                    case 4:
+                    case 7:
+                    case 11:
+                    case 13:
+                    case 20:
+                        stones -= 3;
+                        repaint();
+                        break;
+                    default:
+                        stones = (int) (Math.random() * 3) + 1;
+                        break;
+                }
             }
-            if (stones % 4 + 1 == 2){
-                stones -= 3;
-                currentPlayer = 1;
-                repaint();
-            }
-            if (stones % 4 + 1 == 1){
-                stones -= 3;
-                currentPlayer = 1;
-                repaint();
-            }
-            currentPlayer = 1;
-
-        }
-
-    public static void wait(int ms)
-    {
-        try
-        {
-            Thread.sleep(ms);
-        }
-        catch(InterruptedException ex)
-        {
-            Thread.currentThread().interrupt();
-        }
     }
-
-    }
+}
 
 
 
