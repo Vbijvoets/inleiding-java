@@ -40,7 +40,6 @@ public class Main extends Applet {
         for (int i = 0; i < stones; i++){
             g.fillRect(15 + (i * 10),10,5,30);
         }
-        g.drawString(Integer.toString(stones),30,70);
 
     }
 
