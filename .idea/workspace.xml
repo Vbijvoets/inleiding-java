@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6332c970-23af-49ab-8117-647f9acb30e9" name="Default Changelist" comment="h11">
+      <change afterPath="$PROJECT_DIR$/src/game/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +51,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -70,7 +75,7 @@
   <component name="RunManager">
     <configuration name="Main" type="Applet" nameIsGenerated="true">
       <option name="HEIGHT" value="500" />
-      <option name="MAIN_CLASS_NAME" value="h11.Main" />
+      <option name="MAIN_CLASS_NAME" value="game.Main" />
       <module name="inleiding-java" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -95,6 +100,7 @@
       <workItem from="1599556361244" duration="31723000" />
       <workItem from="1600936843759" duration="150000" />
       <workItem from="1601303482516" duration="4213000" />
+      <workItem from="1603198843313" duration="11405000" />
     </task>
     <task id="LOCAL-00001" summary="h02 klaar">
       <created>1599205804108</created>
@@ -272,10 +278,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="h11" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="184" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601368397712">
+    <state x="184" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603199080677">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state x="184" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.826@0.23.1440.826" timestamp="1601368397712" />
+    <state x="184" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.826@0.23.1440.826" timestamp="1603199080677" />
     <state x="533" y="149" key="#com.intellij.ide.util.MemberChooser" timestamp="1599551953099">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
@@ -288,22 +294,22 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="144" y="95" key="DiffContextDialog/0.23.1440.826@0.23.1440.826" timestamp="1599206876585" />
-    <state width="1362" height="202" key="GridCell.Tab.0.bottom" timestamp="1601371571547">
+    <state width="1362" height="202" key="GridCell.Tab.0.bottom" timestamp="1603876186501">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state width="1362" height="202" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1601371571547" />
-    <state width="1362" height="202" key="GridCell.Tab.0.center" timestamp="1601371571546">
+    <state width="1362" height="202" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1603876186500" />
+    <state width="1362" height="202" key="GridCell.Tab.0.center" timestamp="1603876186500">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state width="1362" height="202" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1601371571546" />
-    <state width="1362" height="202" key="GridCell.Tab.0.left" timestamp="1601371571545">
+    <state width="1362" height="202" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1603876186500" />
+    <state width="1362" height="202" key="GridCell.Tab.0.left" timestamp="1603876186499">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state width="1362" height="202" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1601371571545" />
-    <state width="1362" height="202" key="GridCell.Tab.0.right" timestamp="1601371571547">
+    <state width="1362" height="202" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1603876186499" />
+    <state width="1362" height="202" key="GridCell.Tab.0.right" timestamp="1603876186500">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state width="1362" height="202" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1601371571547" />
+    <state width="1362" height="202" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1603876186500" />
     <state x="521" y="163" key="RollbackChangesDialog" timestamp="1599206881921">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
@@ -316,6 +322,10 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="320" y="176" key="Vcs.Push.Dialog.v2/0.23.1440.826@0.23.1440.826" timestamp="1600779584327" />
+    <state x="432" y="339" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1603785656077">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="432" y="339" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1440.826@0.23.1440.826" timestamp="1603785656077" />
     <state x="511" y="357" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599645628721">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
@@ -328,5 +338,16 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="385" y="173" width="670" height="676" key="search.everywhere.popup/0.23.1440.826@0.23.1440.826" timestamp="1599916568099" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/h11/Main.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
