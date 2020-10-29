@@ -40,24 +40,16 @@ public class Main extends Applet {
 
         g.drawString(Integer.toString(stones),50,90);
 
-        if (stones <= 1){
-            if(currentPlayer == 1){
-                g.drawString("Helaas je hebt verloren",30,70);
-            }
-            if (currentPlayer == 2){
-                g.drawString("Woohoo! je hebt gewonnen",30,70);
-            }
-        }
-
     }
 
     class ButtonListener implements ActionListener{
         public void actionPerformed (ActionEvent e){
+            if  (stones >= 1){
                 if (e.getSource() == sub1){
                     if (currentPlayer == 1){
                         stones -= 1;
-                        repaint();
                         currentPlayer = 2;
+                        repaint();
                         ComputerTurn();
                     }
 
@@ -65,8 +57,8 @@ public class Main extends Applet {
                 if (e.getSource() == sub2){
                     if (currentPlayer == 1){
                         stones -= 2;
-                        repaint();
                         currentPlayer = 2;
+                        repaint();
                         ComputerTurn();
                     }
 
@@ -74,12 +66,13 @@ public class Main extends Applet {
                 if (e.getSource() == sub3){
                     if (currentPlayer == 1){
                         stones -= 3;
-                        repaint();
                         currentPlayer = 2;
+                        repaint();
                         ComputerTurn();
                     }
                 }
             }
+        }
         }
 
 
@@ -97,30 +90,30 @@ public class Main extends Applet {
                     case 18:
                     case 21:
                         stones -= 1;
-                        currentPlayer = 1;
                         repaint();
+                        currentPlayer = 1;
                         break;
                     case 3:
                     case 6:
                     case 8:
                     case 10:
                     case 12:
-                    case 14:
                     case 16:
                     case 19:
                     case 22:
                         stones -= 2;
-                        currentPlayer = 1;
                         repaint();
+                        currentPlayer = 1;
                         break;
                     case 4:
                     case 7:
                     case 11:
                     case 13:
+                    case 14:
                     case 20:
                         stones -= 3;
-                        currentPlayer = 1;
                         repaint();
+                        currentPlayer = 1;
                         break;
                     default:
                         break;
