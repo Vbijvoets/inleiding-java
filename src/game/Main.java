@@ -90,12 +90,14 @@ public class Main extends Applet {
                 switch (stones) {
                     case 1:
                     case 2:
+                    case 5:
                     case 9:
                     case 15:
                     case 17:
                     case 18:
                     case 21:
                         stones -= 1;
+                        currentPlayer = 1;
                         repaint();
                         break;
                     case 3:
@@ -108,6 +110,7 @@ public class Main extends Applet {
                     case 19:
                     case 22:
                         stones -= 2;
+                        currentPlayer = 1;
                         repaint();
                         break;
                     case 4:
@@ -116,10 +119,10 @@ public class Main extends Applet {
                     case 13:
                     case 20:
                         stones -= 3;
+                        currentPlayer = 1;
                         repaint();
                         break;
                     default:
-                        stones = (int) (Math.random() * 3) + 1;
                         break;
                 }
             }

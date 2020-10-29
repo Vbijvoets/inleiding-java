@@ -100,7 +100,7 @@
       <workItem from="1599556361244" duration="31723000" />
       <workItem from="1600936843759" duration="150000" />
       <workItem from="1601303482516" duration="4213000" />
-      <workItem from="1603198843313" duration="13888000" />
+      <workItem from="1603198843313" duration="14565000" />
     </task>
     <task id="LOCAL-00001" summary="h02 klaar">
       <created>1599205804108</created>
@@ -249,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603876309523</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Game af">
+      <created>1603879174592</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1603879174592</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,22 +316,22 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="144" y="95" key="DiffContextDialog/0.23.1440.826@0.23.1440.826" timestamp="1599206876585" />
-    <state width="1362" height="202" key="GridCell.Tab.0.bottom" timestamp="1603878229838">
+    <state width="1362" height="202" key="GridCell.Tab.0.bottom" timestamp="1603879986309">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state width="1362" height="202" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1603878229838" />
-    <state width="1362" height="202" key="GridCell.Tab.0.center" timestamp="1603878229837">
+    <state width="1362" height="202" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1603879986309" />
+    <state width="1362" height="202" key="GridCell.Tab.0.center" timestamp="1603879986307">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state width="1362" height="202" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1603878229837" />
-    <state width="1362" height="202" key="GridCell.Tab.0.left" timestamp="1603878229837">
+    <state width="1362" height="202" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1603879986307" />
+    <state width="1362" height="202" key="GridCell.Tab.0.left" timestamp="1603879986307">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state width="1362" height="202" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1603878229837" />
-    <state width="1362" height="202" key="GridCell.Tab.0.right" timestamp="1603878229838">
+    <state width="1362" height="202" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1603879986307" />
+    <state width="1362" height="202" key="GridCell.Tab.0.right" timestamp="1603879986308">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state width="1362" height="202" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1603878229838" />
+    <state width="1362" height="202" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1603879986308" />
     <state width="1362" height="251" key="GridCell.Tab.1.bottom" timestamp="1603877748588">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
@@ -349,10 +356,10 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="220" y="23" width="1024" height="826" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1600628881823" />
-    <state x="320" y="176" key="Vcs.Push.Dialog.v2" timestamp="1603876311307">
+    <state x="320" y="176" key="Vcs.Push.Dialog.v2" timestamp="1603879176926">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state x="320" y="176" key="Vcs.Push.Dialog.v2/0.23.1440.826@0.23.1440.826" timestamp="1603876311307" />
+    <state x="320" y="176" key="Vcs.Push.Dialog.v2/0.23.1440.826@0.23.1440.826" timestamp="1603879176926" />
     <state x="432" y="339" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1603785656077">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
