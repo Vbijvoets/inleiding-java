@@ -14,6 +14,7 @@ public class Main extends Applet {
     Button sub3 = new Button("-3");
 
     int stones = 23;
+    String message = "";
 
     Color background = Color.white;
 
@@ -37,14 +38,16 @@ public class Main extends Applet {
         for (int i = 0; i < stones; i++){
             g.fillRect(15 + (i * 10),10,5,30);
         }
-
-        g.drawString(Integer.toString(stones),50,90);
+        if (stones == 1 && currentPlayer == 1){
+            g.drawString("Helaas je hebt verloren",70,70);
+        }
+        g.drawString(message, 70, 70);
 
     }
 
     class ButtonListener implements ActionListener{
         public void actionPerformed (ActionEvent e){
-            if  (stones >= 1){
+            if  (stones >= 2){
                 if (e.getSource() == sub1){
                     if (currentPlayer == 1){
                         stones -= 1;
@@ -72,52 +75,62 @@ public class Main extends Applet {
                     }
                 }
             }
+            if (stones <= 1 && currentPlayer == 1){
+                message = "Helaas je hebt verloren";
+            }
         }
-        }
+    }
 
 
         // The computers turn.
         public void ComputerTurn () {
 
             if (stones >= 1) {
-                switch (stones) {
-                    case 1:
-                    case 2:
-                    case 5:
-                    case 9:
-                    case 15:
-                    case 17:
-                    case 18:
-                    case 21:
-                        stones -= 1;
-                        repaint();
-                        currentPlayer = 1;
-                        break;
-                    case 3:
-                    case 6:
-                    case 8:
-                    case 10:
-                    case 12:
-                    case 16:
-                    case 19:
-                    case 22:
-                        stones -= 2;
-                        repaint();
-                        currentPlayer = 1;
-                        break;
-                    case 4:
-                    case 7:
-                    case 11:
-                    case 13:
-                    case 14:
-                    case 20:
-                        stones -= 3;
-                        repaint();
-                        currentPlayer = 1;
-                        break;
-                    default:
-                        break;
-                }
+
+                    switch (stones) {
+                        case 1:
+                            message = "Jeej je hebt gewonnen";
+                            stones = 23;
+                            repaint();
+                            break;
+                        case 2:
+                        case 5:
+                        case 9:
+                        case 15:
+                        case 17:
+                        case 18:
+                        case 21:
+                            stones -= 1;
+                            repaint();
+                            currentPlayer = 1;
+                            break;
+                        case 3:
+                        case 6:
+                        case 8:
+                        case 10:
+                        case 12:
+                        case 16:
+                        case 19:
+                        case 22:
+                            stones -= 2;
+                            repaint();
+                            currentPlayer = 1;
+                            break;
+                        case 4:
+                        case 7:
+                        case 11:
+                        case 13:
+                        case 14:
+                        case 20:
+                            stones -= 3;
+                            repaint();
+                            currentPlayer = 1;
+                            break;
+                        default:
+                            break;
+                    }
+
+
             }
     }
 }
