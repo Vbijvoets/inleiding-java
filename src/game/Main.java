@@ -7,6 +7,8 @@ import java.awt.event.ActionListener;
 
 public class Main extends Applet {
 
+
+
     int currentPlayer = 1;
 
     Button sub1 = new Button("-1");
@@ -71,6 +73,7 @@ public class Main extends Applet {
                         stones -= 3;
                         currentPlayer = 2;
                         repaint();
+
                         ComputerTurn();
                     }
                 }
@@ -84,56 +87,34 @@ public class Main extends Applet {
 
         // The computers turn.
         public void ComputerTurn () {
-
             if (stones >= 1) {
 
-                    switch (stones) {
-                        case 1:
-                            message = "Jeej je hebt gewonnen";
-                            stones = 23;
-                            repaint();
-                            break;
-                        case 2:
-                        case 5:
-                        case 9:
-                        case 15:
-                        case 17:
-                        case 18:
-                        case 21:
-                            stones -= 1;
-                            repaint();
-                            currentPlayer = 1;
-                            break;
-                        case 3:
-                        case 6:
-                        case 8:
-                        case 10:
-                        case 12:
-                        case 16:
-                        case 19:
-                        case 22:
-                            stones -= 2;
-                            repaint();
-                            currentPlayer = 1;
-                            break;
-                        case 4:
-                        case 7:
-                        case 11:
-                        case 13:
-                        case 14:
-                        case 20:
-                            stones -= 3;
-                            repaint();
-                            currentPlayer = 1;
-                            break;
-                        default:
-                            break;
+                    if (stones % 4 == 1){
+                        stones -= 1;
+                        repaint();
+                        currentPlayer = 1;
+
+                    } else if (stones % 4 == 2){
+                        stones -= 2;
+                        repaint();
+                        currentPlayer = 1;
+
+                    } else if (stones % 4 == 3){
+                        stones -= 3;
+                        repaint();
+                        currentPlayer = 1;
+
+                    } else {
+                        stones -= 1;
+                        repaint();
+                        currentPlayer = 1;
                     }
 
 
             }
     }
 }
+
 
 
 
